@@ -1,11 +1,5 @@
-/*ToDo List*/
+<Nav>
+* Dokończyc nawigacje
 
-**Important
-- Navigacja (menu,nav)
-- Aktualnosci
-- Slider ze zdjeciami
-- teksty na strone (content)
-
-** Details
-- (!!!) Logo ma duza rozdzielczosc (zmienić obrazek)
-
+<Header>
+* W tle moga być 0 i 1 (spadać i sie obracać powoli)
