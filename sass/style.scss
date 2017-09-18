@@ -1,9 +1,3 @@
-html,body{
-  height: 100%;
-  width: 100%;
-  font-size:16px;
-}
-
 /* Variables {Width} */
 $sm: 768px;
 $md: 992px;
@@ -12,8 +6,9 @@ $lg: 1200px;
 /* Variables {Color} */
 
 
-
-@import "components/flex";
-@import "components/typography";
+/* Imports */
+@import "base/common";
+@import "base/flex";
+@import "base/typography";
 @import "components/navbar";
 @import "components/header";
