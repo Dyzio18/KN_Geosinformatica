@@ -28,6 +28,21 @@
 }
 
 
+@media screen and (max-width: $sm) {
+  .header__introduction {
+    .header__title {
+      font-size: 1.8em;
+    }
+
+    .header__subtitle {
+      font-size: 1.2em;
+    }
+  }
+}
+
+
+
+
 .header__arrow--bottom{
   width:42px;
   height: 72px;
