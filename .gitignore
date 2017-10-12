@@ -2,3 +2,5 @@
 .idea/
 sass/.sass-cache
 .sass-cache/
+.sass-cache
+/.sass-cache/
