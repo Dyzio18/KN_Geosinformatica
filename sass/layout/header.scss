@@ -1,10 +1,36 @@
 /* Header Component */
+@import "../variable";
 
 .header{
   background: #ffffff;
   padding-top:30px;
   height: 100%;
+  position: relative;
 }
+
+.header__triangle{
+  position: absolute;
+  background-color: transparent;
+  color: transparent;
+}
+
+.header__triangle--top {
+  @extend .header__triangle;
+  top: 0;
+  left: 0;
+}
+
+.header__triangle--bottom {
+  @extend .header__triangle;
+  bottom: 0;
+  right: 0;
+}
+
+.triangle--blue{
+  fill: $sky_blue;
+}
+
+
 
 .header__introduction{
   margin-top:10%;

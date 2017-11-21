@@ -1,4 +1,68 @@
-.btn__more {
-  width: 50%;
+@import "../variable";
+
+/* Common button styles */
+.btn {
+  float: left;
+  min-width: 120px;
+  display: block;
+  margin: 1em;
+  padding: 10px 15px;
+  text-align: center;
+  border: 2px solid $navy;
+  background: none;
   font-weight:bold;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  transition:  0.4s;
+}
+/*
+.btn:focus {
+  outline: none;
+  text-decoration: none;
+}*/
+
+.btn__text--upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.btn.button--inverted::before {
+  background: #7986CB;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: $navy;
+  background: $gold_leaf;
+  transition:  0.4s;
+}
+/*
+.btn.button--inverted:hover {
+  color: #37474F;
+  border-color: #fff;
+}*/
+.btn:hover::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ROUNDED BUTTON */
+/*  !!!
+NOTE: NEVER use with .btn
+   ::before in .btn doesn't work with rounded border
+*/
+.btn--round {
+  border-radius: 40px;
+  -webkit-transition:  0.5s;
+  transition:  0.5s;
+}
+.btn--round:hover {
+  background-color: $prussian_blue;
+  color: $white;
+  -webkit-transition:  0.5s;
+  transition:  0.5s;
 }

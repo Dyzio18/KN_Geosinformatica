@@ -1,9 +1,29 @@
-/* Variables {Width} */
+/*
+Theme Name: Geosinformatica
+Theme URI: https://github.com/Dyzio18/KN_Geosinformatica
+Author: Patryk Nizio
+Author URI: https://github.com/Dyzio18
+Description: Autorski szablon dla Kola Naukowego Geosinformatica
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, minimalism, student research  group,
+Text Domain: Geosinformatica
+
+*/
+
+/**
+COLOR SCHEME
+ */
+$prussian_blue:#0b3c5d; // elegant dark blue
+$sky_blue:#328cc1; // light blue
+$gold_leaf:#d9b319; // yellow & gold
+$ivory_black:#1d2731; // Medium dark, as black with deep blue
+
 $sm: 768px;
 $md: 992px;
 $lg: 1200px;
 
-/* Variables {Color} */
 $darkTxt: #333;
 $black: #111111;
 $gray: #AAAAAA;
@@ -14,7 +34,8 @@ $red:     #FF4136;
 $maroon:  #85144B;
 
 
-/* Imports */
+@import "vendor/bootstrap/bootstrap";
+
 @import "base/common";
 @import "base/flex";
 @import "base/typography";
@@ -24,5 +45,11 @@ $maroon:  #85144B;
 @import "layout/footer";
 @import "components/button";
 @import "components/projects";
-@import "vendor/lightgallery";
+
+a:hover {
+  text-decoration: none;
+}
+
+//@import "vendor/lightgallery";
+//@import "vendor/bootstrap/bootstrap-grid";
 
