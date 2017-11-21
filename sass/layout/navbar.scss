@@ -3,17 +3,17 @@
 /* Navbar Component */
 .navbar {
   border: none;
-  height: 100px;
-  background-color: $prussian_blue !important;
-  color: $gold_leaf !important;
+  height: 60px;
+  background-color: #fff !important;
+  color: $navy !important;
 
   -webkit-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.66);
   box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.66);
 
-
-  .collapse.show{
-    background-color: $prussian_blue !important;
+  .collapse.show {
+    background-color: #fff !important;
+    width: 100%;
   }
 
   a {
@@ -24,10 +24,14 @@
     border-radius: 50px;
   }
 
+   .navbar-toggler-icon {
+    color: $navy !important;
+     border: 4px solid $navy;
+  }
   .navbar-toggle {
     background-color: #5d1769;
-    .icon-bar{
-      background-color: #e6e6e6;
+    .icon-bar {
+      background-color: $navy;
     }
   }
 

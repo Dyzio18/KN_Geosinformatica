@@ -2,27 +2,26 @@
   margin-left: auto;
   margin-right: auto;
 }
-.padding__top--m {
-  padding-top:75px;
-}
-.margin__bottom--m {
-  margin-bottom:100px;
-}
-.margin__top--m {
-  margin-top:100px;
-}
 
-@media screen and (min-width: $sm) {
+/*
+.m-r-10 which gives margin-right 10 pixels.
+.m-r-15 gives MARGIN to the RIGHT 15 pixels.
+.m-t-15 gives MARGIN to the TOP 15 pixels and so on.
+.p-b-5 gives PADDING to the BOTTOM of 5 pixels
+.p-l-40 gives PADDING to the LEFT of 40 pixels
+*/
 
-  .card__margin--xl{
-    margin-top:520px;
-  }
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 75, 100, 120, 150, 180, 200, 250); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right);
 
-  .card__margin--l{
-    margin-top:300px;
-  }
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
 
-  .card__margin--m{
-    margin-top:100px;
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
   }
 }

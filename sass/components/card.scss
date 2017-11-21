@@ -1,0 +1,14 @@
+@import "../variable";
+
+.card{
+  padding: 15px;
+}
+
+.card__img {
+  display: block;
+  width: 80%;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
