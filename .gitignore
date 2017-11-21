@@ -1,5 +1,8 @@
 # IGNORE FILES
 .idea/
+style.css.map
+
+# CACHE FILES
 sass/.sass-cache
 .sass-cache/
 .sass-cache
