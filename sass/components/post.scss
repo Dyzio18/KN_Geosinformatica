@@ -1,0 +1,22 @@
+@import "../variable";
+
+.post--promoted {
+  background: #eefefe;
+  border-radius: 10px;
+  border: 2px solid #eee;
+}
+.post {
+  padding: 10px;
+  position: relative;
+}
+
+.post__title {
+  color: $navy;
+}
+.post__date {
+  font-size: 0.7rem;
+}
+.post__date {
+  font-size: 0.9rem;
+  color: $navy;
+}
