@@ -1,26 +1,20 @@
 <?php get_header(); ?>
 
 <header class="header" id="particles-js">
-   <!-- <div class="header__triangle--top"> </div> -->
-   <!-- <svg class="header__triangle--top" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path class="triangle--blue" d="M0 100 L0 0 L100 0 Z"></path>
-    </svg>-->
+    <!-- <div class="header__triangle--top"> </div> -->
+    <!-- <svg class="header__triangle--top" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none">
+         <path class="triangle--blue" d="M0 100 L0 0 L100 0 Z"></path>
+     </svg>-->
     <div class="container">
         <div class="header__introduction">
-            <div>
+            <div class="flex-column flex--center">
                 <h1 class="header__title"> GeosInformatica </h1>
                 <h2 class="header__subtitle"> Koło Naukowe </h2>
                 <p style="font-size:0.7em;">Akademia Górniczo-Hutnicza w Krakowie</p>
+                <button class="btn m-t-50"> Więcej</button>
             </div>
         </div>
-        <!-- Call to action (arrow to bottom)  -- || >
-        <div class="header__arrow--bottom"><i class="fa fa-chevron-down fa-2x callToAction__bounce"
-                                              aria-hidden="true"></i>
-        </div>-->
     </div>
-   <!-- <svg class="header__triangle--bottom" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path class="triangle--blue" d="M100 100 L50 100 L100 33 Z""></path>
-    </svg>-->
 </header>
 
 <section>
@@ -29,7 +23,8 @@
             <h3 class="title" id="AboutUs">O nas</h3>
             <div class="row" data-entrance="from-bottom">
                 <div class="col-lg-6 col-md-4 col-sm-12">
-                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo_lg.png" class="mx-auto img-fluid" alt="Our team">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo_lg.png" class="mx-auto img-fluid"
+                         alt="Our team">
                 </div>
                 <div class="col-lg-6 col-md-8 col-sm-12 pt-5">
                     <p>Koło naukowe Geos Informatica istnieje od 2002 roku i działa przy Katedrze Geoinformatyki i
@@ -52,9 +47,6 @@
                     <span class="font-weight-bold mt-2">
                         Dołącz do nas już dziś!
                     </span>
-                    <button class="btn btn--round "> Więcej! </button>
-                    <a href="#" class="btn"> LOREM ipsum </a>
-
                     <div class="float-right mr-4 text-center">
                         Zobacz nas na: <br>
                         <a class=" text-primary font-weight-bold" href="https://www.facebook.com/GeosInformatica">
@@ -62,7 +54,6 @@
                             facebook
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -80,56 +71,51 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
 
                 <!-- Card element [DRON] -->
-                <div class="card border-light bg-light card__margin--m" data-entrance="from-left">
-                    <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri();?>/img/icons/drone.svg" alt="Dron z kamerą">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Projekt "Nord"</h4>
-                        <h5 class="card-subtitle mb-2 text-center">Dron do scanningu 3D</h5>
-                        <p class="card-text">
-                            Projekt obecnie jest w fazie rozwoju.
-                            Tworzymy drona do skanowania obiektów przestrzennych i tworzenia trójwymiarowego modelu.
+                <div class="card" data-entrance="from-left">
+                    <h4 class="card__title text-center">Projekt "Nord"</h4>
+                    <img class="card__img" src="<?php echo get_stylesheet_directory_uri(); ?>
+                    /img/icons/drone.svg"
+                         alt="Dron z kamerą">
+                    <h5 class="card__subtitle mb-2 text-center">Dron do scanningu 3D</h5>
+                    <div class="card__body">
+                        <p class="card__content">
+                            Lorem ipsum An unmanned aerial vehicle (UAV), commonly known as a drone,
+                            is an aircraft without a human pilot aboard. UAVs are a component of an unmanned aircraft
+                            system (UAS);
+                            which include a UAV, a ground-based controller, and a system of communications between the
+                            two. The flight of UAVs
+                            may operate with various degrees of autonomy: either under remote control by a human
+                            operator or autonomously by onboard computers
                         </p>
                     </div>
-                    <div class="card-footer border-info text-right">
-                        <a href="<?php  echo get_home_url();  ?>/projekt-nord/" class="btn btn-info btn__more">Więcej</a>
+                    <div class="row">
+                        <a href="<?php echo get_home_url(); ?>/projekt-nord/" class="btn">Więcej</a>
                     </div>
                 </div><!--/ Card element -->
-
-                <!-- Card element [EXAMPLE]  -x->
-                <div class="card border-light bg-light card__margin--l" data-entrance="from-left">
-                    <img class="card-img-top" src="<php echo get_stylesheet_directory_uri()... php>img/icons/laptop.svg" alt="Laptop">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Example</h4>
-                        <h5 class="card-subtitle mb-2 text-center">Dron do scanningu 3D</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ipsum nec lorem luctus vestibulum.
-                            Proin fringilla
-                        </p>
-                    </div>
-                    <div class="card-footer border-info text-right">
-                        <a href="#" class="btn btn-info btn__more">Więcej</a>
-                    </div>
-                </div><!--/ Card element -->
-
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
 
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <!-- Card element [KARETKI]-->
-                <div class="card border-light bg-light card__margin--xl" data-entrance="from-right">
-                    <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri();?>/img/icons/ambulance.svg" alt="Karetka pogotowia">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">System dla karetek</h4>
-                        <h5 class="card-subtitle mb-2 text-center">Optymalizacja czasu dojazdów ambulansów</h5>
-                        <p class="card-text">
+                <div class="card" data-entrance="from-right">
+                    <h4 class="card__title text-center">System dla karetek</h4>
+                    <img class="card__img" src="<?php echo get_stylesheet_directory_uri(); ?>
+                    /img/icons/ambulance.svg"
+                         alt="Karetka pogotowia">
+                    <h5 class="card__subtitle mb-2 text-center">Optymalizacja czasu dojazdów ambulansów</h5>
+                    <div class="card__body">
+                        <p class="card__content">
                             Dzięki systemowi geoinformatycznemu skróci się czas dojazdu karetek pogotowia ratunkowego do
-                            pacjentów.
-                            Jest to pierwsza taka aplikacja w Polsce.
+                            pacjentów. Jest to pierwsza taka aplikacja w Polsce.
+                            which include a UAV, a ground-based controller, and a system of communications between the
+                            two. The flight of UAVs
+                            may operate with various degrees of autonomy: either under remote control by a human
+                            operator or autonomously by onboard computers
                         </p>
                     </div>
-                    <div class="card-footer border-info text-right">
+                    <div class="row">
+                        <a href="<?php echo get_home_url(); ?>/projekt-karetki/" class="btn">Więcej</a>
                         <a href="http://www.agh.edu.pl/blog-naukowy/info/article/karetki-dojada-szybciej-blog-naukowy/"
-                           class="float-left btn btn-link"> Artykuł</a>
-                        <a href="<?php  echo get_home_url();  ?>/project-karetki/" class="btn btn-info btn__more">Więcej</a>
+                           class="btn btn--light"> Artykuł</a>
                     </div>
                 </div><!--/ Card element -->
 
@@ -145,20 +131,35 @@
         <div class="col-sm-12 text-right">
             <h3 id="News" class="title">Aktualności</h3>
         </div>
-        <?php while (have_posts()) : the_post(); ?>
-            <article class="col-lg-6 col-md-6 col-sm-12">
-                <h3 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <p>
-                    <span class=""><?php the_time('j F, Y');?></span>
-                    <span class="float-right"><?php the_tags(); ?></span>
-                </p>
-                <?php the_content('Czytaj więcej'); ?>
-            </article>
-        <?php endwhile; ?>
+
+        <!-- LATEST POST -->
+        <?php
+        /** POST LOOP, gets 3 latest post and highlights post
+         *  from category 'promoted'.
+         */
+        $the_query = new WP_Query(array('posts_per_page' => 3));
+        if ($the_query->have_posts()) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                <?php /* highlights post from category 'promoted' */ ?>
+                <article
+                        class="col-lg-4 col-md-6 col-sm-12 post <?php echo (in_category('promoted')) ? 'post--promoted' : ' '; ?> ">
+                    <span class="post__date"><?php the_time('j F, Y'); ?></span>
+                    <!-- <span><?php /* the_tags(); */ ?></span> -->
+                    <h4 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                    <?php the_excerpt(); ?>
+                </article>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+
+            <!-- <a href="404.php" class="btn m-t-20 mx-auto"> Więcej ... </a> -->
+
+        <?php else : ?>
+            <h5 class="m-t-50"><?php __('Brak aktualności'); ?></h5>
+        <?php endif; ?>
+        <!--// LATEST POST -->
     </div>
 </section>
-<!--/ Post loop -->
-
 <!-- Contact -->
 <section class="margin__bottom--m">
     <div class="container">
@@ -189,9 +190,7 @@
                                           data-error="Proszę napisz wiadomość przed wysłaniem"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="col-md-12 text-center">
-                                <input type="submit" class="  btn btn-success btn-send" value="Wyślij wiadomość">
-                            </div>
+                            <button type="submit" class="btn mx-auto m-b-120 float-right"> Wyślij wiadomość</button>
                         </div>
                     </form>
                 </div>
