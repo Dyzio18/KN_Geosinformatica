@@ -13,24 +13,25 @@ Wszystkich zainteresowanych zapraszam do współtworzenia strony lub zgłaszania
 
 Zeby współtworzyc stronę potrzebujecie konta github. Wówczas pobieracie ("FORK") kod z tego repozytorium do siebie. Pracujecie na wersji u siebie a po dokonaniu zmian robicie "pull request" - czyli wysyłacie swoje zmiany żeby zostały dołączone do głównego repozytorium projektu.
 
-***
+---
+
+#### Categorie
+    'category_name' => 'promoted',
+    Wyróźniona kategoria jest "podswietlona" w aktualnosciach. W panelu administratora należy ustawić kategorie "promoted"
+
 
 ## TODO
 Jest jeszcze wiele do zrobienia dlatego poniżej lista:
   (+ issues)
 
-#### Prosty CMS
-* [ ] - Konto Administratora z panelem administratora
-* [ ] - Baza danych dla postów i użytkowników
-* [ ] - Możliwość dodania terminu spotkania/sesji z poziomy panelu Admina
-* [ ] - Dodanie (Panel Admina) i wyswietlenie posta (strona główna)
-* [ ] - Edycja posta
-
 #### Strona WWW
 * [ ] - Pozbycie się nie używanych plików CSS (easy)
-* [ ] - Przeniesienie strony do PHP 
+* [ ] - Optymalizacja
 * [ ] - Dodanie Favicon (easy)
-* [ ] - Optymalizacja zdjeć w galerii - obecne zajmują b. duzo
+* [ ] - Wordpress - strona postów (wszystkie)
+* [ ] - Wordpress - strona wyszukiwania
+* [ ] - Zmiana Nav (napisać własne style)
+* [ ] - Zmiana stopki [footer] - design, rozkład
 
 #### Ogólne
 * [ ] - Stworzenie treści - CONTENT
@@ -38,8 +39,6 @@ Jest jeszcze wiele do zrobienia dlatego poniżej lista:
 
 #### Dodatkowe
 "Nice to have but not require..."
-
 * [ ] - Podpięcie FB do strony
-* [ ] - Konta dla członków koła (panel informacyjny / wewnetrzne informacje)
 
 
