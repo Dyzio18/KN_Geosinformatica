@@ -14,19 +14,33 @@
 </head>
 <body>
 
-<nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+<nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg ">
     <a class="navbar-brand" href="<?php echo get_home_url(); ?>">Geosinformatica</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+    <div class="nav__mobileButton navbar-toggler" id="toogleMenuButton" type="button" data-toggle="collapse" 
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
+
+        <?php
+            if ( is_home() ) {
+                // This is the blog posts index
+                get_sidebar( 'blog' );
+            } else {
+                // This is not the blog posts index
+                get_sidebar();
+            }
+        ?>
+
             <li class="nav-item">
-                <a id="nav__to__AboutUs" class="nav-link" href="<?php echo get_home_url(); ?>#AboutUs">O nas</a>
+                <a class="nav-link" href="<?php if ( !is_home() ) {echo get_home_url();} ?>#AboutUs">O nas</a>
             </li>
             <li class="nav-item">
-                <a id="nav__to__Project" class="nav-link" href="<?php echo get_home_url(); ?>#Projects">Projekty</a>
+                <a class="nav-link" href="<?php if ( !is_home() ) {echo get_home_url();} ?>#Projects">Projekty</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -44,10 +58,10 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a id="nav__to__News" class="nav-link" href="<?php echo get_home_url(); ?>#News">Aktualności</a>
+                <a  class="nav-link" href="<?php if ( !is_home() ) {echo get_home_url();} ?>#News">Aktualności</a>
             </li>
             <li class="nav-item">
-                <a id="nav__to__Contact" class="nav-link" href="<?php echo get_home_url(); ?>#Contact">Kontakt</a>
+                <a class="nav-link" href="<?php if ( !is_home() ) {echo get_home_url();} ?>#Contact">Kontakt</a>
             </li>
         </ul>
     </div>

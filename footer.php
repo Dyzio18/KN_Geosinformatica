@@ -65,11 +65,14 @@
                     <span class="font-weight-bold "> Geosinformatica </span> - Koło naukowe studentów informatyki
                     stosowanej działającej na wydziale WGGiOŚ, Akademii Górniczo-Hutniczej w Krakowie
                 </p>
-                <p>
+                
+                <!--<p>
                     Śledź nasz fanpage na <a class="font-weight-bold text-info" target="_blank"
                                              href="https://www.facebook.com/GeosInformatica">facebooku</a>
                 </p>
-                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;geosinformatica@gmail.com</p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;geosinformatica@gmail.com</p>-->
+
+
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12 ml-auto ">
                 <p class="border border-top-0 border-right-0 border-left-0 border-white">Mapa strony:</p>

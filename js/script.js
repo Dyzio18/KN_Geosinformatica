@@ -1,32 +1,34 @@
-$(document).ready(function() {
+(function($) {
+    $(document).ready(function() {
 
-    // Scroll to first section
-    $(".header__arrow--bottom").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#AboutUs").offset().top
-        }, 2000);
-        return false;
-    });
+        // Scroll to first section
+        $(".header__arrow--bottom").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#AboutUs").offset().top
+            }, 2000);
+            return false;
+        });
 
-    // Return current year in footer
-    document.getElementById('currentYear').innerHTML = (new Date()).getFullYear();
+        // Return current year in footer
+        //document.getElementById('currentYear').innerHTML = (new Date()).getFullYear();
 
-    // Navigation scrolling to section
-    $("#nav__to__Contact").click(function() {
-        $('html, body').animate({ scrollTop: $("#Contact").offset().top }, 2000);
-    });
-    $("#nav__to__Project").click(function() {
-        $('html, body').animate({ scrollTop: $("#Projects").offset().top }, 2000);
-    });
-    $("#nav__to__AboutUs").click(function() {
-        $('html, body').animate({ scrollTop: $("#AboutUs").offset().top }, 2000);
-    });
-    $("#nav__to__News").click(function() {
-        $('html, body').animate({ scrollTop: $("#News").offset().top }, 2000);
-    });
+        $('.nav-link').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 1000);
+            return false;
+        });
 
 
-});
+        /* NAV > MOBILE > Button MENU */
+        document.getElementById("toogleMenuButton").addEventListener("click", function(){
+            document.getElementById("toogleMenuButton").classList.toggle("nav__mobileButton--change");
+            console.log("HEJ");
+        })
+
+    })
+})(jQuery);
+
 
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com

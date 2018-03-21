@@ -1,17 +1,13 @@
 <?php get_header(); ?>
 
 <header class="header" id="particles-js">
-    <!-- <div class="header__triangle--top"> </div> -->
-    <!-- <svg class="header__triangle--top" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none">
-         <path class="triangle--blue" d="M0 100 L0 0 L100 0 Z"></path>
-     </svg>-->
     <div class="container">
         <div class="header__introduction">
             <div class="flex-column flex--center">
                 <h1 class="header__title"> GeosInformatica </h1>
                 <h2 class="header__subtitle"> Koło Naukowe </h2>
                 <p style="font-size:0.7em;">Akademia Górniczo-Hutnicza w Krakowie</p>
-                <button class="btn m-t-50"> Więcej</button>
+                <a href="#AboutUs" class="btn m-t-50 nav-link"> Więcej</a>
             </div>
         </div>
     </div>
@@ -73,9 +69,7 @@
                 <!-- Card element [DRON] -->
                 <div class="card" data-entrance="from-left">
                     <h4 class="card__title text-center">Projekt "Nord"</h4>
-                    <img class="card__img" src="<?php echo get_stylesheet_directory_uri(); ?>
-                    /img/icons/drone.svg"
-                         alt="Dron z kamerą">
+                    <img class="card__img" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/drone.svg"   alt="Dron z kamerą">
                     <h5 class="card__subtitle mb-2 text-center">Dron do scanningu 3D</h5>
                     <div class="card__body">
                         <p class="card__content">
@@ -160,6 +154,8 @@
         <!--// LATEST POST -->
     </div>
 </section>
+
+
 <!-- Contact -->
 <section class="margin__bottom--m">
     <div class="container">
